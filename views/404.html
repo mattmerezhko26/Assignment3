@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>404 Not Found</title>
+</head>
+<body>
+  <nav class="flex justify-between items-center p-4 bg-gray-800 text-gray-200">
+    <a href="/" class="text-xl font-bold">Climate Solutions</a>
+    
+    <div class="flex space-x-4 items-center">
+      <a href="/about" class="hover:text-gray-300">About</a>
+      <div class="relative inline-block">
+        <input type="checkbox" id="toggleDropdown" class="hidden peer" />
+        <label for="toggleDropdown" class="flex items-center cursor-pointer hover:text-gray-300">
+          Sector
+          <span class="ml-1">▼</span>
+        </label>
+        <div class="absolute right-0 mt-2 w-48 bg-gray-900 text-white rounded-lg shadow-lg opacity-0 scale-95 transform transition-all duration-200 origin-top-right peer-checked:opacity-100 peer-checked:scale-100">
+          <a href="/solutions/projects?sector=Energy" class="block px-4 py-2 text-sm hover:bg-gray-700">Industry</a>
+          <a href="/solutions/projects?sector=Transportation" class="block px-4 py-2 text-sm hover:bg-gray-700">Transportation</a>
+          <a href="/solutions/projects?sector=Waste" class="block px-4 py-2 text-sm hover:bg-gray-700">Electricity</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container mx-auto">
+    <div class="hero bg-base-200 my-8">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">404 - Page Not Found</h1>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
