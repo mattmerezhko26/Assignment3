@@ -27,7 +27,7 @@ app.get("/solutions/projects", (req, res) => {
   if (sector) {
     projectData.getProjectsBySector(sector)
       .then(projects => res.json(projects))
-      .catch(err);
+      .catch(err => res.status(404).sendFile(path.join(__dirname, "views", "404.html")));
   } else {
     projectData.getAllProjects()
       .then(projects => res.json(projects))
